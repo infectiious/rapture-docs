@@ -1,0 +1,206 @@
+/* Based on the Deep Navy VSCode theme created by Haruno19 - https://github.com/Haruno19 */
+[data-md-color-scheme="DeepNavy"] {
+  --md-primary-fg-color: #0e0f16;
+  --md-primary-fg-color--light: #12141c;
+  --md-primary-fg-color--dark: #060303;
+  --md-default-bg-color: #12141c;
+  --md-default-fg-color: #000000;
+  --md-default-fg-color--light: #d4dafe;
+  --md-default-fg-color--lighter: hsla(0, 0%, 0%, 0.32);
+  --md-default-fg-color--lightest: hsla(0, 0%, 0%, 0.07);
+  --md-default-bg-color--light: hsla(0, 0%, 100%, 0.7);
+  --md-default-bg-color--lighter: hsla(0, 0%, 100%, 0.3);
+  --md-default-bg-color--lightest: hsla(0, 0%, 100%, 0.12);
+  --md-primary-fg-color--dark: #d4dafe;
+  --md-primary-bg-color: #d4dafe;
+  --md-primary-bg-color--light: #d4dafe;
+  --md-accent-fg-color: #9571e5;
+  --md-accent-fg-color--transparent: #9571e5;
+  --md-accent-bg-color: hsla(0, 0%, 100%, 1);
+  --md-accent-bg-color--light: hsla(109, 87%, 42%, 0.7);
+  --md-code-fg-color: #37867f;
+  --md-code-bg-color: #0f1015;
+  --md-code-hl-color: hsla(#{hex2hsl($clr-yellow-a200)}, 0.5);
+  --md-code-hl-number-color: hsla(0, 67%, 50%, 1);
+  --md-code-hl-special-color: hsla(340, 83%, 47%, 1);
+  --md-code-hl-function-color: hsla(291, 45%, 50%, 1);
+  --md-code-hl-constant-color: hsla(250, 63%, 60%, 1);
+  --md-code-hl-keyword-color: hsla(219, 54%, 51%, 1);
+  --md-code-hl-string-color: hsla(150, 63%, 30%, 1);
+  --md-code-hl-name-color: var(--md-code-fg-color);
+  --md-code-hl-operator-color: var(--md-default-fg-color--light);
+  --md-code-hl-punctuation-color: var(--md-default-fg-color--light);
+  --md-code-hl-comment-color: var(--md-default-fg-color--light);
+  --md-code-hl-generic-color: var(--md-default-fg-color--light);
+  --md-code-hl-variable-color: var(--md-default-fg-color--light);
+  --md-typeset-color: #a6accd;
+  --md-typeset-a-color: #a6accd;
+  --md-typeset-mark-color: hsla(#{hex2hsl($clr-yellow-a200)}, 0.5);
+  --md-typeset-del-color: hsla(6, 90%, 60%, 0.15);
+  --md-typeset-ins-color: hsla(150, 90%, 44%, 0.15);
+  --md-typeset-kbd-color: hsla(0, 0%, 98%, 1);
+  --md-typeset-kbd-accent-color: hsla(0, 100%, 100%, 1);
+  --md-typeset-kbd-border-color: hsla(0, 0%, 72%, 1);
+  --md-typeset-table-color: #23242d;
+  --md-admonition-fg-color: var(--md-default-fg-color);
+  --md-admonition-bg-color: var(--md-default-bg-color);
+  --md-footer-fg-color: #a6accd;
+  --md-footer-fg-color--light: hsla(0, 0%, 100%, 0.7);
+  --md-footer-fg-color--lighter: hsla(0, 0%, 100%, 0.3);
+  --md-footer-bg-color: hsla(0, 0%, 0%, 0.87);
+  --md-footer-bg-color--dark: hsla(0, 0%, 0%, 0.32);
+  --md-shadow-z1: 0 #{px2rem(4px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.05),
+    0 0 #{px2rem(1px)} hsla(0, 0%, 0%, 0.1);
+  --md-shadow-z2: 0 #{px2rem(4px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.1),
+    0 0 #{px2rem(1px)} hsla(0, 0%, 0%, 0.25);
+  --md-shadow-z3: 0 #{px2rem(4px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.2),
+    0 0 #{px2rem(1px)} hsla(0, 0%, 0%, 0.35);
+  --md-admonition-bg-color: #0f1015;
+  --md-admonition-fg-color: #d4dafe;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none !important;
+}
+
+.markdown-body .task-list-item input[type="checkbox"] {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+.md-typeset table:not([class]) {
+  border-color: var(--md-default-bg-color);
+}
+
+.md-typeset {
+  box-shadow: 0 px2rem(4px) px2rem(10px) hsla(0, 0%, 0%, 0.3),
+    0 0 px2rem(1px) hsla(0, 0%, 0%, 0.2);
+}
+
+thead {
+  background-color: #0e0f16 !important;
+  border-bottom-color: #9571e5 !important;
+}
+
+/* tr {
+  background-color: #12141c;
+} */
+
+tr:hover {
+  background-color: rgba(0, 0, 0, 0.514);
+}
+
+th {
+  color: var(--md-text-color);
+  background-color: var(--md-default-bg-color--ultra-dark);
+  border-bottom: 0px;
+}
+
+td {
+  border-top: 0px;
+}
+
+g {
+  --md-accent-fg-color--transparent: #0e0f16;
+}
+
+.mermaid {
+  fill: #ececff;
+  stroke: #234f00;
+  stroke-width: 1px;
+}
+
+.mermaid {
+  fill: #0e0f16 !important;
+  stroke: var(--md-mermaid-node-fg-color);
+}
+
+.mermaid {
+  color: var(--md-mermaid-label-fg-color);
+  font-family: var(--md-mermaid-font-family);
+  --md-mermaid-node-fg-color: #00000000;
+  --md-mermaid-node-bg-color: #a6accd;
+  --md-mermaid-edge-color: #451ca9;
+  /* --md-mermaid-edge-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(93,9,121,1) 0%, rgba(0,255,192,1) 100%); */
+  --md-mermaid-label-bg-color: #00000000;
+  --md-mermaid-label-fg-color: #e100ff;
+  --md-default-fg-color--lighter: #a6accd;
+}
+
+#__mermaid_1 {
+  color: #a6accd;
+  font-family: var(--md-mermaid-font-family);
+}
+
+#__mermaid_1 {
+  fill: rgb(248, 0, 0) !important;
+  stroke: #ff0000  !important;
+}
+
+.edgeLabel {
+  background-color: #831a1a;
+}
+
+.botkube {
+  width: 180px;
+  height: 80px;
+
+}
+
+.externaldns {
+  width: 180px;
+  image-rendering: auto;
+  justify-content: center;
+
+
+}
+
+.longhorn {
+  width: 180px;
+  height: 80px;
+  align-content: center;
+
+}
+
+.metallb {
+  width: 180px;
+  align-content: center;
+
+}
+
+.rancher {
+  width: 180px;
+  height: 80px;
+  justify-content: center;
+
+}
+
+.k3s {
+  width: 180px;
+  height: 80px;
+  justify-content: center;
+
+}
+
+.traefik {
+  width: 180px;
+  height: 80px;
+
+}
+
+.kured {
+  width: 180px;
+}
+
+.kubevip {
+  width: 180px;
+  height: 80px;
+
+}
+
+.certmanager {
+  width: 180px;
+
+  background-size: 100%;
+
+}

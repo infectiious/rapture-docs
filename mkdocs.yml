@@ -1,0 +1,119 @@
+---
+# Project information
+site_name: Rapture
+site_description: Home lab Documentation
+site_author: Josh Kirkwood
+site_url: https://infectiious.github.io/rapture
+
+# Repository
+repo_name: infectiious/rapture
+repo_url: https://github.com/infectiious/rapture
+edit_uri: ""
+
+# Configuration
+docs_dir: ./docs
+
+theme:
+  name: material
+  logo: _assets/logo4.png
+  favicon: _assets/logo4.png
+  language: en
+  font:
+    text: Roboto
+    code: Fira Code
+  features:
+    - content.code.annotate
+    - navigation.instant
+    - content.tabs.link
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: DeepNavy
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/infectiious
+
+# Extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - markdown.extensions.toc
+  - markdown.extensions.admonition
+  - markdown.extensions.smarty
+  - pymdownx.betterem
+  - markdown.extensions.attr_list
+  - markdown.extensions.def_list
+  - markdown.extensions.tables
+  - markdown.extensions.abbr
+  - markdown.extensions.footnotes
+  - markdown.extensions.md_in_html
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.tilde
+  - pymdownx.caret
+  - pymdownx.smartsymbols
+  - pymdownx.emoji
+  - pymdownx.escapeall
+  - pymdownx.tasklist
+  - pymdownx.progressbar
+  - pymdownx.arithmatex
+  - pymdownx.mark
+  - pymdownx.striphtml
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.saneheaders
+# Navbar
+nav:
+  - 🏠 Home:
+      - "index.md"
+      - "home/repo_structure.md"
+      - "home/cluster_overview.md"
+      - "home/road_map.md"
+      - "home/network_map.md"
+      - "home/technology_stack.md"
+  - 💽 Storage:
+      - "storage/index.md"
+      - "storage/backups.md"
+  - 🌏 Networking:
+      - "networking/index.md"
+      - "networking/dns.md"
+      - "networking/podgateway.md"
+      - "networking/multus.md"
+  - 📜 Templates:
+      - "_templates/namespace.md"
+      - "_templates/deployment.md"
+      - "_templates/service.md"
+      - "_templates/ingress.md"
+      - "_templates/ingressroute.md"
+      - "_templates/pvc.md"
+      - "_templates/certificate.md"
+      - "_templates/kustomization.md"
+      - "_templates/helmrepository.md"

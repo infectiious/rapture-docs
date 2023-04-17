@@ -1,0 +1,59 @@
+# PVC Templates.
+
+## Longhorn PVC
+
+```yaml
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc0
+  namespace: namespace
+  labels:
+    app: namespace
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: longhorn
+  resources:
+    requests:
+      storage: 20Gi
+```
+
+---
+## NFS PVC
+
+```yaml
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc0
+  namespace: namespace
+  labels:
+    app: namespace
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
+  # ---
+  # Digital Ocean
+  # storageClassName: do-block-storage
+  # ---
+  # AWS
+  # storageClassName: aws-ebs
+  # ---
+  # Azure
+  # storageClassName: azure-disk
+  # ---
+  # GCE PD
+  # storageClassName: gce-pd
+  # ---
+  # CIVO
+  # storageClassName: civo-volume
+  # ---
+```
+
+---
