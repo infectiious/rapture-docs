@@ -25,52 +25,18 @@
 
 ### ⚖️ Dependancy structure.
 
-``` mermaid
-graph TD
-Apps --> Core
-Apps --> Networking
-Core --> Charts
-Networking --> Charts
-Charts --> Config
-Charts --> CRDS
-Charts --> Base
-
-classDef fill fill:#12141c,stroke:#333,stroke-width:0px,color:#d4dafe
-classDef zone fill:#0e0f16,stroke:#333,stroke-width:0px,color:#d4dafe
-classDef zone2 fill:#09090f,stroke:#333,stroke-width:0px,color:#d4dafe
-classDef outside fill:#0e0f16,stroke:#333,stroke-width:0px,color:#d4dafe
-class Apps,Core,Networking,Charts,Config,CRDS,Base fill
-class openshift zone
-class service zone2
-class client outside
-```
-
 ```mermaid
-flowchart LR
+graph TD;
+    Base-->Charts;
+    Charts-->Networking;
+    Charts-->Monitoring;
+    Charts-->Security;
+    Networking-->Ingress;
+    Monitoring-->Logging;
+    Monitoring-->Metrics;
+    Ingress-->Apps;
 
-%% nodes ----------------------------------------------------------
-client["client"]
-load_balancer["load balancer"]
-api1["API (replica 1)"]
-api2["API (replica 2)"]
-apin["API (replica N)"]
-
-%% edges ----------------------------------------------------------
-client --- load_balancer
-subgraph openshift
-    subgraph service
-        api1 --- api2 --- apin
-    end
-    load_balancer --- service
-end
-
-%% style ----------------------------------------------------------
 classDef fill fill:#12141c,stroke:#333,stroke-width:0px,color:#d4dafe
-classDef zone fill:#0e0f16,stroke:#333,stroke-width:0px,color:#d4dafe
-classDef zone2 fill:#09090f,stroke:#333,stroke-width:0px,color:#d4dafe
 classDef outside fill:#0e0f16,stroke:#333,stroke-width:0px,color:#d4dafe
-class api1,api2,apin,load_balancer fill
-class openshift zone
-class service zone2
-class client outside
+class Apps,Core,Networking,Charts,Config,CRDS,Monitoring,Loggin,Metrics,Security,Ingress,Logging,Base fill
 ```
