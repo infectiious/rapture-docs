@@ -1,23 +1,19 @@
-# Roadmap
+# My Roadmap for future
 
-``` markdown title="Task list"
-- [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
-- [ ] Vestibulum convallis sit amet nisi a tincidunt
-    * [x] In hac habitasse platea dictumst
-    * [x] In scelerisque nibh non dolor mollis congue sed et metus
-    * [ ] Praesent sed risus massa
-- [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+## Overview
+
+The next steps I need to take in order to advance my Kubernetes skills
+
+1. Deploying applications remaining services in existing technology stack.
+2. Implementing BGP routing with Cilium to enable communication between pods in different nodes.
+3. Continuing to learn and practice with Kubernetes concepts and tools, such as kubectl and Kubernetes API objects, in order to prepare for the CKA certification exam.
+
+## Mermaid Diagram
+
+```mermaid
+graph LR
+A[Deploy applications with Flux] --> B[Implement BGP with Cilium]
+B --> C[Continue learning and practicing Kubernetes concepts and tools]
 ```
 
-<div class="result" markdown>
-
-- [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
-- [ ] Vestibulum convallis sit amet nisi a tincidunt
-    * [x] In hac habitasse platea dictumst
-    * [x] In scelerisque nibh non dolor mollis congue sed et metus
-    * [ ] Praesent sed risus massa
-- [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
-
-</div>
-
-:smile: :smile: :smile:
+This roadmap will help guide you in furthering your knowledge and skills with k3s, Flux, and GitOps, and ultimately prepare you for the CKA certification exam.
